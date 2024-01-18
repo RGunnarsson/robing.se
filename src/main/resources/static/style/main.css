@@ -1,14 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
-#header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 140px;
-    width: -webkit-fill-available;
-    border-bottom: darkgrey 1px solid;
-    padding: 0;
+body {  /* or any parent wrapper */
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
     margin: 0;
+}
+
+#header {
+    height: 140px;
+    border-bottom: darkgrey 1px solid;
     display: flex;
 }
 
@@ -26,15 +27,15 @@
 }
 
 #main {
-    background-color: azure;
+    flex: 1;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #footer {
-    position: fixed;
-    bottom: 0;
-    width: -webkit-fill-available;
     border-top: darkgray 1px solid;
-    left: 0;
 }
 
 .footerLinks {
@@ -60,5 +61,11 @@
     justify-content: center;
     align-items: center;
     font-size: x-large;
+}
 
+.adminLogin {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: default;
 }
