@@ -6,3 +6,40 @@
     z-Index: 1;
     position: fixed;
 }
+
+.connect4Close {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+}
+
+.connect4Close i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.connect4Board {
+    margin: 24px auto auto;
+    border: cornflowerblue 3px double;
+}
+
+.connect4Board th, .connect4Board td {
+    width: 60px;
+    height: 50px;
+}
+
+.connect4Board td {
+    background-color: cornflowerblue;
+}
+
+.connect4Board td span {
+    width: 50px;
+    height: 50px;
+    background-color: gainsboro;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+}
